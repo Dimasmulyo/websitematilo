@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Matilo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<script>
+    function myFunction() {
+document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+if (!e.target.matches('.dropbtn')) {
+var myDropdown = document.getElementById("myDropdown");
+if (myDropdown.classList.contains('show')) {
+  myDropdown.classList.remove('show');
+}
+}
+}
+</script>
+<body>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <div class="dropdown">
+            <button class="dropbtn" onclick="myFunction()">Merek Motor
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content" id="myDropdown">
+              <a href="news.html">Merek Yamaha</a>
+              <a href="kawasaki.html">Kawasaki</a>
+              <a href="honda.html">HONDA</a>
+            </div>
+            </div> 
+        <li><a href="kontak.html">Contact</a></li>
+      </ul>
+
+    <div style="padding-left:16px">
+
+        <br><br>
+        <h1 style="padding-left:200px">Kawasaki</h1>
+        <br><br>
+
+        <table class="table-tipe">
+            <tr>
+                <th>
+                    <div class="container">
+                        <h2>Ninja Karbu</h2>
+                        <div class="card">
+                            <img class="card-img-top" src="gambar\td.jpg" alt="Card image" style="width:100%">
+                            <div class="card-body">
+                                <h4 class="card-title">Sport Fairing</h4>
+                                <p class="card-text">1.Desain Body</p>
+                                <p class="card-text">Yang membuat motor ini tampak sporty dan elegan adalah desain body nya. Mulai dari body bagian depan yang merupakan headlamp dengan konsep modern dan sporty. Tidak hanya desainnya saja, headlamp motor ini juga menggunakan teknologi LED yang lebih terang.
+                                    
+                                    Bagian depan fender motor ini juga tampak lebih minimalis sehingga membuatnya tampak lebih elegan. Rangka motor ini menggunakan teralis dengan fitur suspensi yang handal. Suspensi yang digunakan adalah Telescopic Fork dengan ukuran 41 mm.
+                                    
+                                    Motor ini juga sudah dilengkapi dengan fitur anti goncang yang akan membuat Anda semakin nyaman menggunakannya di medan yang terjal. Body dari motor ini terlihat lebih garang tapi tetap elegan dan minimalis.</p>
+                                <br><br>
+                                <p class="card-text">2.Mesin</p>
+                                <p class="card-text">Dari segi mesin tentu motor ini selangkah lebih maju dibandingkan motor sejenisnya. Tipe mesin yang digunakan adalah mesin 4 stroke dengan parallel twin dan DOHC 8 valve. Kapasitas mesinnya adalah 249 cc dan mampu menghasilkan tenaga 28,5 kw (39ps)/12.500 rpm.
+                                    
+                                    Tipe transmisi yang digunakan adalah 6 speed yang sudah dilengkapi dengan return shift dan slipper clutch. Slipper clutch ini merupakan fitur anti selip ketika motor berpindah transmisi dengan cepat. Starter yang digunakan adalah starter electric dengan speedometer digital.</p>
+                            </div>
+                        </div>
+                    </div>
+                </th>
+
+                <th>
+                    <div class="container">
+                        <h2>Ninja RR</h2>
+                        <div class="card">
+                            <img class="card-img-top" src="gambar\ts.jpg" alt="Card image" style="width:100%">
+                            <div class="card-body">
+                                <h4 class="card-title">Sport Elegan </h4>
+                                <p class="card-text">
+                                    Kawasaki Ninja 150 R merupakan motor sport naked dengan ciri khas stang jepit atau clip-on , dan memiliki basis mesin yang sama dengan Ninja 150 RR. disegmentasikan sebagai sport touring karena menggunakan velg ring 17-18 agar tetap stabil saat berakselerasi di jalan yang lurus dan meredam guncangan saat melibas lubang di jalan, selain itu juga menggunakan karburator PWL dengan venturi 26 mm yang memiliki keunggulan untuk efisiensi bahan bakar dengan konsumsi 28km banding 1 liter, dan rasio final gear 14-42  agar memiliki tarikan awal hingga tengah yang cenderung responsif untuk stop and go saat touring, top speed dapat mencapai 140 km/jam. 
+                                
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </th>
+                        
+            </div>
+            </div>
+            </tr>
+
+    </div>
+
+</body>
+
+
+
+</html>

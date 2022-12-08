@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Matilo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+</head>
+<script>
+        function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+  var myDropdown = document.getElementById("myDropdown");
+    if (myDropdown.classList.contains('show')) {
+      myDropdown.classList.remove('show');
+    }
+  }
+}
+    </script>
+<body>
+    
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <div class="dropdown">
+            <button class="dropbtn" onclick="myFunction()">Merek Motor
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content" id="myDropdown">
+              <a href="news.html">Merek Yamaha</a>
+              <a href="kawasaki.html">Merek kawasaki</a>
+              <a href="honda.html">Merek Honda</a>
+            </div>
+            </div> 
+        <li><a href="kontak.html">Contact</a></li>
+      </ul>
+    <div style="padding-left:16px">
+        <br><br><br><br>
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+                <div class="numbertext">1</div>
+                <img class="center" src="gambar\th.jpg" style="width:100%">
+                <div class="text">R15</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">2</div>
+                <img class="img-index" src="gambar\ty.jpg" style="width:100%">
+                <div class="text">Aerox</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">3</div>
+                <img class="img-index" src="gambar\td.jpg" style="width:100%">
+                <div class="text">Ninja Karbu</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">4</div>
+                <img class="img-index" src="gambar\as.jpg" style="width:100%">
+                <div class="text">Cbr 150</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">5</div>
+                <img class="img-index" src="gambar\pk.jpg" style="width:100%">
+                <div class="text">CBR 250rr</div>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+
+        </div>
+        <br>
+
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+            <span class="dot" onclick="currentSlide(6)"></span>
+            <span class="dot" onclick="currentSlide(7)"></span>
+            <span class="dot" onclick="currentSlide(8)"></span>
+            <span class="dot" onclick="currentSlide(9)"></span>
+            <span class="dot" onclick="currentSlide(10)"></span>
+            <span class="dot" onclick="currentSlide(11)"></span>
+            <span class="dot" onclick="currentSlide(12)"></span>
+        </div>
+
+        <script>
+            let slideIndex = 1;
+            showSlides(slideIndex);
+
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+                let i;
+                let slides = document.getElementsByClassName("mySlides");
+                let dots = document.getElementsByClassName("dot");
+                if (n > slides.length) { slideIndex = 1 }
+                if (n < 1) { slideIndex = slides.length }
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " active";
+            }
+        </script>
+    </div>
+
+</body>
+
+
+</html>
